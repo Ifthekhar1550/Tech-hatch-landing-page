@@ -1,0 +1,333 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+}
+body{
+        background-color: #ffffff;
+
+}
+.container{
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 20px;
+}
+nav{
+        color: #000;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Geist', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+
+} 
+.logo-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.logo-links ul{
+        display: flex;
+        list-style: none;
+    
+}
+.logo-links ul li{
+        margin: 0 10px;
+        padding: 10px 10px;
+    
+}
+.logo-links ul li a{
+        text-decoration: none;
+        color: #000;
+}   
+.logo-links ul li:hover{
+        background-color: #cecece;
+        border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.dropdown:hover > .dropdown-content {
+    display: inline-block !important;
+}
+
+.dropdown-content li {
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.dropdown-content li:hover {
+    background-color: #c2f84d!important;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+
+.get-in-touch {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Geist', sans-serif;
+    padding: 10px ;
+    background-color: #9de400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+}
+.get-in-touch:hover {
+    background-color:  #9de900;
+ ;
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.hero-image{
+position: relative;
+
+}
+.mobile-dash{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    height: 26rem;
+    border-radius: 10px;
+  
+}
+.dashboard {
+margin-top: 2rem;
+}
+
+.dashboard img {
+
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+
+}
+.hero-content{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+}
+.hero-content h1{
+    font-weight:800;
+    font-family: 'Geist', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #000;
+}  
+.creative{
+    margin-bottom: 1rem;
+    color: #a4e90e;
+  
+} 
+.hero-content p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Geist', sans-serif;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+    color:  rgb(75, 85, 99)
+}
+.hero-content button {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Geist', sans-serif;
+    padding: 10px 20px;
+    background-color: #9de400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero-content button:hover {
+    background-color:  #9de900;
+ ;
+}
+
+.arrow {
+    display: inline-block;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.brands{
+    margin-top: 2.5rem;
+
+}
+.brands-content h6{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+
+}
+.brands-content h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.brands-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Geist', sans-serif;
+    line-height: 1.8rem;
+    margin-bottom: 6rem;
+    color:  rgb(9, 9, 11);
+    line-height: 1.6rem;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider{
+ height: 100px;
+ margin: 4rem 0;
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ 
+}
+.slider-track{
+    display: flex;
+    gap: 20px;
+}
+
+.slider .slider-track{
+animation: slide 40s linear infinite;
+  display: flex ;
+    width: calc(250px * 14);
+
+}
+.slider .slide{
+    height: 100px;
+    width: 250px;
+
+
+}
+.services{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.services h6{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+    text-align: center;
+}
+.services h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.services-all {
+    display: grid;
+    grid-template-columns: repeat(3, 12fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.service-card img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.service-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+.card-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+ gap: 20px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'Geist', sans-serif;
+    color: rgb(75, 85, 99);
+    line-height: 1.6rem;
+    text-align: left;
+}
