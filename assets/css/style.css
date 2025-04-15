@@ -6,7 +6,7 @@
 }
 body{
         background-color: #ffffff;
-
+   
 }
 .container{
         width: 100%;
@@ -108,6 +108,9 @@ nav{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
+    padding: 6.2rem 0;
+    
+
 }
 .hero-section img{
     width: 100%;
@@ -331,3 +334,63 @@ animation: slide 40s linear infinite;
     line-height: 1.6rem;
     text-align: left;
 }
+.hero-curve {
+    position: relative;
+
+    margin: 5rem auto;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.svg-curve {
+  
+transform-origin: center center;
+    color:#c8c8c8f0;
+}
+.svg-curve.outer{
+    position: absolute; 
+    top: -38rem;
+    right: -2rem;
+}
+.svg-curve.inner{
+    position: absolute; 
+    top: -32rem;
+    right: 2.2rem;
+    
+}
+
+.svg-curve.outer .fixed,
+.svg-curve.inner .fixed {
+    animation: none; 
+}
+
+.svg-curve.outer path.animated{
+    animation: loading-spin 2s linear infinite; 
+    stroke-width: 2/4px;
+}
+.svg-curve.inner  path.animated {
+    animation: loading-spin-reverse 2s linear infinite; 
+    stroke-width: 2/4px;
+}
+@keyframes loading-spin {
+    0% {
+        stroke-dasharray: 150, 1000; 
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: -1000;
+    }
+}
+@keyframes loading-spin-reverse {
+    0% {
+        stroke-dasharray: 150, 1000; 
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: 1000; 
+    }
+}
+
+
