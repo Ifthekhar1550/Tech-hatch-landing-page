@@ -1,53 +1,73 @@
-*{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
-body{
-        background-color: #ffffff;
-   
-}
-.container{
-        width: 100%;
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 20px;
-}
-nav{
-        color: #000;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: 'Geist', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
 
-} 
-.logo-links{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+
 }
-.logo-links ul{
-        display: flex;
-        list-style: none;
-    
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+   padding: 1rem 0;
+    margin: 0 auto;
+
 }
-.logo-links ul li{
-        margin: 0 10px;
-        padding: 10px 10px;
-    
+#header {
+
+       background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.logo-links ul li a{
-        text-decoration: none;
-        color: #000;
-}   
-.logo-links ul li:hover{
-        background-color: #cecece;
-        border-radius: 5px;
+
+nav {
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;    
 }
+
+.logo-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-links ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.logo-links ul li {
+    margin: 0 10px;
+    padding: 10px 10px;
+
+}
+
+.logo-links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-links ul li:hover {
+    background-color: #cecece;
+    border-radius: 5px;
+}
+
 .dropdown {
     position: relative;
 }
@@ -67,7 +87,8 @@ nav{
     margin: 0;
     list-style: none;
 }
-.dropdown:hover > .dropdown-content {
+
+.dropdown:hover>.dropdown-content {
     display: inline-block !important;
 }
 
@@ -77,7 +98,7 @@ nav{
 }
 
 .dropdown-content li:hover {
-    background-color: #c2f84d!important;
+    background-color: #c2f84d !important;
     opacity: 0.8;
     border-radius: 5px;
 }
@@ -87,7 +108,7 @@ nav{
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Geist', sans-serif;
-    padding: 10px ;
+    padding: 10px;
     background-color: #9de400;
     border: none;
     border-radius: 10px;
@@ -98,79 +119,107 @@ nav{
     gap: 10px;
     margin-left: 1rem;
 }
+
 .get-in-touch:hover {
-    background-color:  #9de900;
- ;
+    background-color: #9de900;
+    ;
 }
 
-.hero-section{
+.hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
     padding: 6.2rem 0;
-    
+
 
 }
-.hero-section img{
+
+.hero-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
-.hero-image{
-position: relative;
+
+.hero-image {
+    position: relative;
 
 }
-.mobile-dash{
+
+.mobile-dash {
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 1%;
     transform: translateX(-50%);
     background-color: #fff;
     height: 26rem;
-    border-radius: 10px;
-  
+    width: 12rem;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid #cecece;
+
 }
+
 .dashboard {
-margin-top: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    animation: move-left-right 3s ease-in-out infinite;
+    ;
+    width: 34rem;
 }
 
 .dashboard img {
-
     width: 100%;
     object-fit: contain;
-    border-radius: 20px;
-
+    border-radius: 15px;
+    box-shadow: 0px 40px 46px rgba(0, 0, 0, 0.1)
 }
-.hero-content{
-    
+
+@keyframes move-left-right {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+.hero-content {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     text-align: left;
 }
-.hero-content h1{
-    font-weight:800;
+
+.hero-content h1 {
+    font-weight: 800;
     font-family: 'Geist', sans-serif;
     font-size: 3rem;
     margin-bottom: 1rem;
     color: #000;
-}  
-.creative{
+}
+
+.creative {
     margin-bottom: 1rem;
     color: #a4e90e;
-  
-} 
-.hero-content p{
+
+}
+
+.hero-content p {
     font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Geist', sans-serif;
     line-height: 1.8rem;
     margin-bottom: 2rem;
-    color:  rgb(75, 85, 99)
+    color: rgb(75, 85, 99)
 }
+
 .hero-content button {
     font-size: 1rem;
     font-weight: 600;
@@ -185,10 +234,84 @@ margin-top: 2rem;
     align-items: center;
     gap: 10px;
 }
+
 .hero-content button:hover {
-    background-color:  #9de900;
- ;
+    background-color: #9de900;
+    ;
 }
+
+.hero-curve {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+
+    z-index: -1;
+}
+
+.svg-curve {
+
+    transform-origin: center center;
+    color: #c8c8c8f0;
+}
+
+.svg-curve.outer {
+    position: absolute;
+    top: -34rem;
+    right: -21rem;
+}
+
+.svg-curve.inner {
+    position: absolute;
+    top: -26rem;
+    right: -13rem;
+
+
+}
+
+.svg-curve.outer .fixed,
+.svg-curve.inner .fixed {
+    animation: none;
+    opacity: 0.3;
+}
+
+.svg-curve.outer path.animated {
+    animation: loading-spin 4s linear infinite;
+    stroke-width: 2/4px;
+    opacity: 0.5;
+}
+
+.svg-curve.inner path.animated {
+    animation: loading-spin-reverse 4s linear infinite;
+    stroke-width: 2/4px;
+    opacity: 0.5;
+}
+
+@keyframes loading-spin {
+    0% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: -1000;
+    }
+}
+
+@keyframes loading-spin-reverse {
+    0% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 150, 1000;
+        stroke-dashoffset: 1000;
+    }
+}
+
 
 .arrow {
     display: inline-block;
@@ -196,86 +319,115 @@ margin-top: 2rem;
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
 }
 
-.brands{
+.brands {
     margin-top: 2.5rem;
 
 }
-.brands-content h6{
+
+.brands-content h6 {
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Geist', sans-serif;
     color: #000;
 
 }
-.brands-content h2{
+
+.brands-content h2 {
     font-size: 2.2rem;
     font-weight: 700;
     font-family: 'Geist', sans-serif;
     color: #000;
     margin-bottom: 1rem;
 }
-.brands-content p{
+
+.brands-content p {
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Geist', sans-serif;
     line-height: 1.8rem;
     margin-bottom: 6rem;
-    color:  rgb(9, 9, 11);
+    color: rgb(9, 9, 11);
     line-height: 1.6rem;
 }
-@keyframes slide{
-    0%{
+
+@keyframes slide {
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-250px * 7));
     }
 }
-.slider{
- height: 100px;
- margin: 4rem 0;
- overflow: hidden;
- position: relative;
- width: 100%;
- 
+
+.slider {
+    height: 100px;
+    margin: 4rem 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
 }
-.slider-track{
+
+.slider-track {
     display: flex;
     gap: 20px;
 }
 
-.slider .slider-track{
-animation: slide 40s linear infinite;
-  display: flex ;
+.slider .slider-track {
+    animation: slide 40s linear infinite;
+    display: flex;
     width: calc(250px * 14);
 
 }
-.slider .slide{
+
+.slider .slide {
     height: 100px;
     width: 250px;
 
 
 }
-.services{
+
+.services {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  
+    position: relative;
+   
+
 }
-.services h6{
+.service-bg{
+    background: url('../images/Service-bg/looper-pattern.svg') no-repeat center center;
+    background-size: cover;
+position: absolute;
+    width: 140%;
+    height: 1200px;
+   top: 43rem;
+    left:0;
+    right: 0;
+    z-index: -1;
+}
+
+.services h6 {
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Geist', sans-serif;
     color: #000;
     text-align: center;
 }
-.services h2{
+
+.services h2 {
     font-size: 2.2rem;
     font-weight: 700;
     font-family: 'Geist', sans-serif;
@@ -283,6 +435,7 @@ animation: slide 40s linear infinite;
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .services-all {
     display: grid;
     grid-template-columns: repeat(3, 12fr);
@@ -291,10 +444,11 @@ animation: slide 40s linear infinite;
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 0.9rem;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -319,78 +473,19 @@ animation: slide 40s linear infinite;
     color: #000;
     margin-bottom: 0.5rem;
 }
-.card-icon{
+
+.card-icon {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
- gap: 20px;
+    margin-bottom: 0.5rem;
+    gap: 20px;
 }
 
 .service-card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Geist', sans-serif;
     color: rgb(75, 85, 99);
-    line-height: 1.6rem;
+    line-height: 1.3rem;
     text-align: left;
 }
-.hero-curve {
-    position: relative;
-
-    margin: 5rem auto;
-    opacity: 0.6;
-    z-index: -1;
-}
-
-.svg-curve {
-  
-transform-origin: center center;
-    color:#c8c8c8f0;
-}
-.svg-curve.outer{
-    position: absolute; 
-    top: -38rem;
-    right: -2rem;
-}
-.svg-curve.inner{
-    position: absolute; 
-    top: -32rem;
-    right: 2.2rem;
-    
-}
-
-.svg-curve.outer .fixed,
-.svg-curve.inner .fixed {
-    animation: none; 
-}
-
-.svg-curve.outer path.animated{
-    animation: loading-spin 2s linear infinite; 
-    stroke-width: 2/4px;
-}
-.svg-curve.inner  path.animated {
-    animation: loading-spin-reverse 2s linear infinite; 
-    stroke-width: 2/4px;
-}
-@keyframes loading-spin {
-    0% {
-        stroke-dasharray: 150, 1000; 
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 150, 1000;
-        stroke-dashoffset: -1000;
-    }
-}
-@keyframes loading-spin-reverse {
-    0% {
-        stroke-dasharray: 150, 1000; 
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dasharray: 150, 1000;
-        stroke-dashoffset: 1000; 
-    }
-}
-
-
