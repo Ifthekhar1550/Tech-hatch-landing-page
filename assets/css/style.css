@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fafbfc;
     overflow-x: hidden;
 
 }
@@ -332,6 +333,9 @@ nav {
 
 .brands {
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    z-index: 1;
+    background-color: #fafbfc;
 
 }
 
@@ -359,6 +363,7 @@ nav {
     margin-bottom: 6rem;
     color: rgb(9, 9, 11);
     line-height: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes slide {
@@ -373,7 +378,7 @@ nav {
 
 .slider {
     height: 100px;
-    margin: 4rem 0;
+    margin: 5rem 0;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -411,12 +416,13 @@ nav {
     background: url('../images/Service-bg/looper-pattern.svg') no-repeat center center;
     background-size: cover;
 position: absolute;
-    width: 140%;
-    height: 1200px;
-   top: 43rem;
+    width: 150%;
+    height: 81.25rem;
+   top: 38rem;
     left:0;
     right: 0;
     z-index: -1;
+ 
 }
 
 .services h6 {
@@ -489,3 +495,412 @@ position: absolute;
     line-height: 1.3rem;
     text-align: left;
 }
+.why-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+   
+}
+.why-us-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Geist', sans-serif;
+    color: #000;
+    margin-top:2rem ;
+    margin-bottom: 1rem;
+    
+}
+.why-us-content p {
+
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Geist', sans-serif;
+    line-height: 2rem;
+    margin-bottom: 6rem;
+    color:
+    rgb(107, 114, 128);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+
+}
+.why-us-content button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    padding: 0.8rem 1rem;
+    background-color: #9de400;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}   
+
+.why-us-img img {
+    width: 100%;
+   
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+.contact-us{
+    border-radius: 2rem;
+    padding: 8rem;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+
+}
+.contact-us-header h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: 'Mona Sans', sans-serif;
+    color: 
+    rgb(51, 65, 85);
+    margin-bottom: 1rem;
+    font-style: normal; 
+    
+
+}
+.contact-us-header button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    padding: 0.5rem 1rem;
+ 
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+.contact-us-header button:hover {
+    background-color: #9de400;
+    color: #000;
+    border: 1px solid #9de400;
+}
+.contact-us-content h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Mona Sans', sans-serif;
+    color: 
+    rgb(51, 65, 85);        
+    margin-bottom: 1rem;
+    font-style: normal;
+    margin-top: 4rem;
+}
+.contact-flex{
+    display: grid;  
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.office{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.office-content h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    color: 
+    rgb(51, 65, 85);        
+    margin-bottom: 0.5rem;
+    font-style: normal;
+}   
+.office-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Geist', sans-serif;
+    color: rgb(75, 85, 99);
+    line-height: 1.1rem;
+    text-align: left;
+}
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;  padding-top:8rem;
+    font-family: 'Geist', sans-serif;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+    text-align: left    ;
+}.footer-company {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-left img {
+    width: 3rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-left h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: rgb(31, 41, 55);
+    text-align: left;
+    font-weight: 400;
+}
+
+.footer-links-1 ul,
+.footer-links-2 ul {
+    list-style: none;
+    padding-left: 4rem;
+}
+
+.footer-links-1 ul li h3,
+.footer-links-2 ul li h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Mona Sans', sans-serif;
+    color: #000;
+}
+
+.footer-links-1 ul li a,
+.footer-links-2 ul li a {
+    text-decoration: none;
+    color: rgb(75, 85, 99);
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.footer-links-1 ul li a:hover,
+.footer-links-2 ul li a:hover {
+    color: #000;
+    transition: color 0.3s ease;
+
+}
+
+.footer-right h5 {
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.Connect img {
+    width: 20px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.Connect a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.Connect a:hover {
+    color: #9de400;
+}
+
+.social-links a {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #9de400;
+}
+.address {
+    text-align: left;
+    font-size: 0.9rem;
+    color: rgb(107, 114, 128);
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(107, 114, 128);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+      
+    }
+    .hero-content{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .hero-image {
+        display: none;
+    }
+    .hero-curve {
+        display: none;
+    }
+
+
+
+nav{
+    display: none;
+}
+
+
+
+
+    .brands-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .brands-content p {
+        font-size: 0.9rem;
+    }
+
+    .services-all {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-card {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .why-us {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+.contact-us {
+        padding: 2rem;
+        margin: 0rem 0.8rem;
+    }
+    .contact-flex {
+       
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .contact-us-header {
+        text-align: center;
+
+    }
+    .contact-us-header h1 {
+        font-size: 2rem;
+
+
+    }
+    .contact-us-header button {
+        font-size: 0.8rem;
+    }
+    .contact-us-content h5 {
+        font-size: 1.2rem;
+    }
+    .contact-us-content h5 {
+        font-size: 1.2rem;
+    }
+    .office-content h4 {
+        font-size: 1rem;
+    }
+    .office-content p {
+        font-size: 0.9rem;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .footer-left {
+        text-align: center;
+    }
+    .footer-left h3 {
+        font-size: 1.5rem;
+    }
+    .footer-left p {
+        font-size: 0.9rem;
+    }
+    .footer-links-1 ul,
+    .footer-links-2 ul {
+        padding-left: 0;
+    }
+
+    .footer-links-1 ul li h3,
+    .footer-links-2 ul li h3 {
+        font-size: 1.2rem;
+    }
+    .footer-links-1 ul li a,
+    .footer-links-2 ul li a {
+        font-size: 0.9rem;
+    }
+    .footer-right h5 {
+        font-size: 1.2rem;
+    }
+
+    .Connect img {
+        width: 15px;
+    }
+    .Connect a {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+    .address {
+        font-size: 0.8rem;
+    }
+}
+
