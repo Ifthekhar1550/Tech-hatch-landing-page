@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Hatch Landing page</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f060e66234.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header  id="header">
+    <header class="container" id="header">
         
       
         <nav class="container"> 
@@ -23,12 +26,17 @@
             <li>Home</li>
             <li>About Us</li>
             <li>Our Process</li> 
-            <li class="dropdown"> <span>Services</span>
+            <li class="dropdown"> <span>Services</span><span class="caret"><i class="fa-solid fa-angle-down"></i></span>
                
                 <ul class="dropdown-content">
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
+                    <li><a href="#software-development">Software Development</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae explicabo assumenda nihil, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#web-design">Web Design</a>  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae explicabo assumenda nihil, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#mobile-app">Mobile App</a>  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae explicabo assumenda nihil, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#graphics-design">Graphics Design</a>  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae explicabo assumenda nihil, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#server-management">Server Management</a>  <p>Lorem, ipsum dolor sit aml, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#robotics-automation">Robotics & Automation</a>  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae explicabo assumenda nihil, vero culpa pariatur! Cumque consequuntur, tempora autem consectetur optio, dignissimos mollitia voluptatum ullam voluptate consequatur itaque veritatis?</p></li>
+                    <li><a href="#pcb-design">PCB Design</a><p>Lorem ipsum dolor, sit amet consecorrupti perspiciatis quae a dolorem magnam veniam illo alias, optio aspernatur temporibus.</p></li>
                 </ul>
             </li>
               
@@ -40,6 +48,9 @@
         <img src="./assets/images/icons/Image (1).png" alt="" srcset="">
 
         <button class="get-in-touch">Get in touch</button>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+          </div>
     </div>
         </nav>
 
@@ -345,17 +356,16 @@
             <a href="#contact">Get Connect With US</a>
          </div> 
          <div class="social-links">
-            <a href="https://www.facebook.com/techhatch/" target="_blank"><i
-                class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/techhatch/" target="_blank"><i
-                    class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/tech-hatch/" target="_blank">
-                        <i class="fa fa-linkedin"></i></a>
-                    <a href="https://wa.me/yourwhatsappnumber" target="_blank">
-                        <i class="fa fa-whatsapp"></i></a>
-                    <a href="https://www.threads.net/@techhatch" target="_blank">
-                        <i class="fa fa-threads"></i></a>
-    
+            <a class="linkedin" href="https://www.linkedin.com/company/tech-hatch/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+             <a class=" upwork" href="https://upwork.com/techhatch" target="_blank"><i class="fa-brands fa-square-upwork"></i></a>
+            <a class="fb" href="https://www.facebook.com/techhatch/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> 
+              <a class="threads" href="https://www.threads.net/@techhatch" target="_blank"><i class="fa-brands fa-square-threads"></i></a>
+            <a class="insta" href="https://www.instagram.com/techhatch/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            
+            <a class="whatsapp" href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+         
+          
+
          </div>
          
         <p class="address">
@@ -369,6 +379,7 @@
         <p class="copyright">&copy;Tech Hatch. 2024</p>
      
 </footer>
+
 <script src="./assets/js/main.js"></script>
 </body>
 </html>
