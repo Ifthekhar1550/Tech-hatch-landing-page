@@ -38,7 +38,7 @@ nav {
     align-items: center;
     font-family: 'Geist', sans-serif;
     font-size: 1rem;
-    font-weight: 600;    
+    font-weight: 400;    
 }
 
 .logo-links {
@@ -65,7 +65,7 @@ nav {
 }
 
 .logo-links ul li:hover {
-    background-color: #cecece;
+    background-color: #f6f3f3;
     border-radius: 5px;
 }
 .caret {
