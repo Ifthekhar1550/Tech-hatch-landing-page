@@ -24,3 +24,20 @@ setInterval(() => {
         }, 500);
     }
 }, 2000);
+
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const icon = hamburger.querySelector('i');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+
+  if (hamburger.classList.contains('active')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-xmark'); 
+  } else {
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
+  }
+});
