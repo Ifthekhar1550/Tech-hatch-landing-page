@@ -410,7 +410,7 @@ nav {
     width: 100%;
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0px 40px 46px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
 }
 
 @keyframes move-left-right {
@@ -602,7 +602,7 @@ nav {
     margin-bottom: 1rem;
 }
 .slider {
-    height: 6.25rem;
+    height: 3.25rem;
     margin: 5rem 0;
     overflow: hidden;
     position: relative;
@@ -616,7 +616,16 @@ nav {
 
 .slide {
     flex: 0 0 17.5rem;
-    height: 6.25rem;
+    height: 3.25rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+
 }
 
 .devider {
@@ -684,7 +693,7 @@ position: absolute;
     border-radius: 20px;
     padding: 0.9rem;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 50px rgba(0,0,0,.075);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -775,7 +784,7 @@ position: absolute;
    
     object-fit: contain;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 50px -12px #ddd;
 
 
 }
@@ -783,7 +792,7 @@ position: absolute;
     border-radius: 2rem;
 padding: 8rem;
     background-color: #fff;
-    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 35.5556px 54.4444px 88.8889px rgba(125,149,169,.12);
     margin-top: 8rem;
     margin-bottom: 2rem;
 
@@ -1108,10 +1117,12 @@ nav li{
     .brands-content p {
         font-size: 0.9rem;
     }
-      .slide {
+
+    .slide {
         flex: 0 0 calc(100% / 2);
+   
+   
     }
-    
     .service-bg{
         width: 100%;
      height: 81.25rem;;
@@ -1220,8 +1231,9 @@ width: 80%;
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .slide {
-        flex: 0 0 calc(100% / 3);
-    }
+        flex: 0 0 calc(100% / 3 );
+        }
+   
     
 }
 @media (min-width:1023px){

@@ -18,12 +18,15 @@ setInterval(() => {
             currentIndex = 0;
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                    sliderTrack.style.transition = 'transform 0.3s ease-in-out';
+                    sliderTrack.style.transition = 'transform 0.7s ease-in-out';
                 });
             });
         }, 500);
     }
 }, 2000);
+
+
+
 
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
